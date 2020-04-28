@@ -357,8 +357,8 @@
 		border-radius: 6px;
 	}
 	.header .sidebar .right .account .login:hover,
-	 .header .sidebar .right .account .register:hover,
-	 .header .sidebar .basket .my-basket:hover {
+	.header .sidebar .right .account .register:hover,
+	.header .sidebar .basket .my-basket:hover {
 		font-size: 12px;
 	}
 	.header .sidebar .right .account .register {

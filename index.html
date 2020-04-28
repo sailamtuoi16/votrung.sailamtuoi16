@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T99.com</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--BOOSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--ANIMATION-Jquery-->
+    <link rel="stylesheet" href="./jquery/animate.css">
+    <!-- GOOGLE FONTS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+	<!--OWL CAROUSEL-->
+    <link rel="stylesheet" type="text/css" href="./OwlCarousel2-2.3.4.v2/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./OwlCarousel2-2.3.4.v2/css/owl.theme.default.css">
+    <!-- CSS -->
+	    <link rel="stylesheet" type="text/css" href="./Style/style-2.css">
+	    <link rel="stylesheet" type="text/css" href="./Style_silde/style-slide.css">
+	    <link rel="stylesheet" type="text/css" href="./Style/responsive.css">
+	    
+    <!--JavaScript-->
+    <script src="./jquery/jquery-3.4.1.js"></script>
+    <script src="./OwlCarousel2-2.3.4.v2/js/owl.carousel.js"></script>
+
+</head>
+<body>
+	<div id="container">
+		<!-- HEADER -->
+			<div id="contact-header-container">
+				<div class="contact-header">
+					<div class="hot-line">
+						<i class="fas fa-phone"></i>
+						<a href="#" style="color: #fff;">Hotline miễn phí : 0774787675 (8h - 20h, T2 - T7)</a>
+					</div>
+					<div class="mail-address">
+						<i class="fas fa-envelope"></i>
+						<a href="#" style="color: #fff;">Email hỗ trợ : vctrung14091x9x@gmail.com</a>
+					</div>
+					<div class="social-network" style="position: absolute; right: 0;">
+						<a href="" style="color: #fff;" ><i class="fab fa-facebook"></i></a>
+						<a href="" style="color: #fff;" ><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- <script>
+				window.onscroll = function() { toggleHideContact_header()};
+				function toggleHideContact_header() {
+					if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)
+					{
+						document.getElementById("header-container").className = "changePOS";
+						// document.getElementById("back-to-top").style.display = "block";
+					} else {
+						document.getElementById("header-container").className = "";
+						// document.getElementById("back-to-top").style.display = "";
+					}	
+				}
+				// var buttonBack_To_Top = document.getElementById("back-to-top");
+				// 	buttonBack_To_Top.onclick = function () {
+				// 		document.body.scrollTop = 0;
+				// 		document.documentElement.scrollTop = 0;
+				// }
+			</script> -->
+			<div id="header-container">
+				<div class="header">
+					<div class="sidebar">
+						<!-- RESPONSIVE -->
+						<div class="user-icon-container" onclick="myFunction_button_menu()" >
+							<i class="fas fa-bars icon-user" ></i>
+						</div>
+						<!-- ------- -->
+						<div class="user-menu-responsive" id="my-account">
+					  		<div class="clickX" onclick="myFunction_button_menu()">
+					    		<i style="color: red" class="far fa-times-circle"></i>
+					    	 </div>
+					     	 <div class="top-menu">
+								<i class="fas fa-user-circle user-icon"></i>
+								<span>Đăng nhập</span>
+							</div>
+							<div class="bottom-menu">
+								<ul>
+									<li>Điện thoại</li>
+									<li>Điện thoại</li>
+									<li>Điện thoại</li>
+									<li>Điện thoại</li>
+									<li>Điện thoại</li>
+									<li>Điện thoại</li>
+									<li>Điện thoại</li>
+									<li>Điện thoại</li>
+								</ul>
+							</div>
+						</div>
+						<script>
+							 	
+							 	function myFunction_button_menu() {
+									var x = document.getElementById("my-account");
+									if (x.className === "user-menu-responsive") {
+									   x.className += " clicked";
+									} else {
+									   x.className = "user-menu-responsive";
+									}
+								};
+
+						</script>
+					<!-- LEFT -->
+						<div class="left">
+							<div class="logo">
+								<a href="#"><img src="./image/logo3.png"></a>
+							</div>
+						</div>
+					<!-- CENTER -->
+						<div class="center">
+								<form class="search">
+									<button type="submit" class="fa fa-search" title="Tìm ngay"></button>
+									<input class="input-search" type="search" name="search" id="search" placeholder="Tìm kiếm sản phẩm" required>
+								</form>
+						</div>
+						<div class="icon-search-container" onclick="myFunction_button_search()">	
+					    		<i class="fas fa-search icon-search" ></i>
+						</div>
+						<div class="search-responsive" id="search-responsive" >
+							<input type="search" name="search-responsive" placeholder="Tìm sản phẩm">
+							<button type="button" class="find">Tìm</button>
+						</div>
+
+						<script type="text/javascript">
+						 	function  myFunction_button_search() {
+						 		var x = document.getElementById("search-responsive");
+									if (x.className === "search-responsive") {
+									   x.className += " search-responsive-show";
+									} else {
+									   x.className = "search-responsive";
+									}
+						 	};
+						</script>
+
+						<div class="basket">
+							<a href="#">
+								<div class="my-basket">
+									<i class="fas fa-shopping-cart"></i><span>&nbsp;&nbsp;Giỏ</span>
+								</div>
+							</a>
+						</div>
+						<!-- RIGHT -->
+						<div class="right">
+							<div class="account">
+								<a href="">
+									<div class="login">Đăng nhập</div>
+								</a>
+								<a href="">
+									<div class="register">Đăng ký</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- ===================================================================================-->
+		<!-- MAIN-CONTAINT -->
+		<div id="main-conataint">
+			<div id="containt">
+				<div class="menu">
+					<a class="menu-item" href="#">ĐIỆN THOẠI</a>
+					<a class="menu-item" href="#">LAPTOP</a>
+					<a class="menu-item" href="#">TABLET</a>
+					<a class="menu-item" href="#">TI VI</a>
+					<a class="menu-item" href="#">PHỤ KIỆN</a>
+					<a class="menu-item" href="#">CARDS</a>
+					<a class="menu-item" href="#">Xem tất cả ...</a>
+				</div>
+				<!-- FIRST-CONTAINT-->
+				<div id="first-containt">
+					<!-- FIRST-CONTAINT-LEFT-->
+					<div id="first-containt-left">
+					  	<div class="first-containt-left-top">
+					  		<div class="owl-carousel owl-theme" id="mySlidesShow">
+					  			<div class="item" data-index="1" >
+					  				<img src="https://cdn.tgdd.vn/2020/03/banner/800-300-800x300-11.png">
+					  			</div>
+					  			<div class="item" data-index="2" >
+					  				<img src="https://cdn.tgdd.vn/2020/03/banner/800-300-800x300-12.png">
+					  			</div>
+					  			<div class="item" data-index="3" >
+					  				<img src="https://cdn.tgdd.vn/2020/03/banner/800-300-800x300-13.png">
+					  			</div>
+					  			<div class="item" data-index="4" >
+					  				<img src="https://cdn.tgdd.vn/2020/03/banner/800-300-800x300-14.png">
+					  			</div>
+					  			<div class="item" data-index="5" >
+					  				<img src="https://cdn.tgdd.vn/2020/03/banner/800-300-800x300-15.png">
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="first-containt-left-bottom">
+					  		<div class="panel-left-bottom" >
+					  			<div class="list-item active" data-index="1" >
+					  				<a href="">Galaxy S20 Series Giảm ngay 2 triệu</a>
+					  			</div>
+					  			<div class="list-item" data-index="2" >
+					  				<a href="">Galaxy S20 Series Giảm ngay 2 triệu</a>
+					  			</div>
+					  			<div class="list-item" data-index="3" >
+					  				<a href="">Galaxy S20 Series Giảm ngay 2 triệu</a>
+					  			</div>
+					  			<div class="list-item" data-index="4" >
+					  				<a href="">Galaxy S20 Series Giảm ngay 2 triệu</a>
+					  			</div>
+					  			<div class="list-item" data-index="5" >
+					  				<a href="">Galaxy S20 Series Giảm ngay 2 triệu</a>
+					  			</div>
+					  			
+					  		</div>
+					  	</div>
+					</div>
+					
+					<!-- FIRST-CONTAINT-LEFT-END-->
+					<!-- ===================================================================================-->
+					<!-- FIRST-CONTAINT-RIGHT-->
+					<div id="first-containt-right">
+						<!--first-containt-right-top-->
+						<div class="first-containt-right-top">
+							<div class="banner-news">
+								<a class="tin-cn" href="/tin-tuc" style="color: #fff;">Tin công nghệ</a>
+								<div class="sim">
+									<span class="ping"></span>
+									<a href="#">Thẻ cào online. Thẻ gì cũng có hết, mua ngay thôi!!!!!!!!!!!!</a>
+								</div>
+							</div>
+							<div class="news">
+								<ul>
+									<li class="news-first">
+										<a href="">
+						                  	<img src="./image/dcs.png" >
+						                  	<h2>Trên tay Apple Watch S5 LTE màu Hồng: Cho tay nàng hồng, cho nồng mùa xuân</h2>
+						                </a>
+									</li>
+									<li class="news-first">
+										<a href="">
+						                  	<img src="./image/trollface.gif" >
+						                  	<h2>Đây là cách sở hữu Samsung Galaxy Note 10 Lite khi chưa đủ kinh phí, vừa tiện lợi vừa tiết kiệm</h2>
+						                </a>
+									</li>
+								</ul>
+								
+							</div>
+						</div>
+						<!--first-containt-right-bottom-->
+						<div class="first-containt-right-bottom">
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&width=410&height=170&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="100%" style="border:none;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> 
+						</div>
+					</div>
+					<!-- FIRST-CONTAINT-RIGHT-END-->
+
+				</div>
+				<!-- FIRST-CONTAINT--END-->
+				<div class="slideShow-responsive-mobile">
+					  	<div class="owl-carousel owl-theme" id="mySlidesShow-rp-mb">
+					  		<div class="item" data-index="1" >
+					  			<img src="https://cdn.tgdd.vn/2020/03/banner/800-300-800x300-11.png">
+					  		</div>
+					  		<div class="item" data-index="2" >
+					  			<img src="https://cdn.tgdd.vn/2020/03/banner/800-300-800x300-12.png">
+					  		</div>
+					  		<div class="item" data-index="3" >
+					  			<img src="https://cdn.tgdd.vn/2020/03/banner/800-300-800x300-13.png">
+					  		</div>
+					  		<div class="item" data-index="4" >
+					  			<img src="https://cdn.tgdd.vn/2020/03/banner/800-300-800x300-14.png">
+					  		</div>
+					  		<div class="item" data-index="5" >
+					  			<img src="https://cdn.tgdd.vn/2020/03/banner/800-300-800x300-15.png">
+					  		</div>
+					  	</div>
+					  </div>
+				<!-- SECOND-CONTAINT-->
+				<div id="second-containt">
+					<div class="panel-container">
+						<div class="panel-text">ĐANG KHUYẾN MÃI</div>
+					</div>
+					<!--SLIDESHOW-SP-->
+					<div class="show-sp">
+						<div class="product-container">
+							<div class="owl-carousel owl-theme" id="myOwlCarousel">
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            	<label class="discount img-label">GIẢM 500.000₫</label>
+					                        	</div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            	<label class="discount img-label">GIẢM 500.000₫</label>
+					                        	</div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                    	 <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            	<label class="discount img-label">GIẢM 500.000₫</label>
+					                        	</div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                       	<div class="img-container">
+					                       		<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            	<label class="discount img-label">GIẢM 500.000₫</label>
+					                        	</div>
+					                       	</div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					           <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            	<label class="discount img-label">GIẢM 500.000₫</label>
+					                        	</div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div> 
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					           <!-- PRODUCT-1 -->
+					           <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            	<label class="discount img-label">GIẢM 500.000₫</label>
+					                        	</div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					           <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            	<label class="discount img-label">GIẢM 500.000₫</label>
+					                        	</div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            	<img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            	<label class="discount img-label">GIẢM 500.000₫</label>
+					                        	</div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            	<label class="discount img-label">GIẢM 500.000₫</label>
+					                        	</div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- END-PRODUCT -->
+					      	</div>
+					      </div>
+				      <!-- END-OWL-SLIDE -->
+					</div>
+				</div>
+				<!--ID = SECOND-CONTAINT-END-->
+				<!--ID = THIRD-CONTAINT-->
+				<div id="third-containt">
+					<div class="navigat">
+						<span>ĐIỆN THOẠI NỔI BẬT</span>
+						<ul>
+							<li><a href="">Điện thoại Iphone</a></li>
+							<li><a href="">Điện thoại Samsung</a></li>
+							<li><a href="">Điện thoại OPPO</a></li>
+							<li><a href="">Điện thoại Huawei</a></li>
+							<li><a href="">Xem tất cả điện thoại</a></li>
+						</ul>
+					</div>
+					<div class="homeproduct">
+						<ul class="list">
+							<li class="feature pd-1" >
+								<a href="#">
+									<img src="https://cdn.tgdd.vn/Products/Images/42/194251/Feature/s10-lite-spec-ft-480x222-1.jpg">
+									<div class="feature-promo">
+										<h2 class="name-sp">Samsung Galaxy S10 Lite</h2>
+										<div class="price">
+											<strong>14.990.000₫</strong>
+										</div>
+									</div>
+									<div class="feature-label">Trả góp 0%</div>
+								</a>
+							</li>
+							<li class="main-product pd-2">
+								<a href="#">
+				                    <div class="product">
+				                        <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            <label class="discount img-label">GIẢM 500.000₫</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung galaxy A51</div>
+				                            <div class="price">
+				                                <strong>7.499.000₫</strong>
+				                                <span>6.999.000₫</span>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">GIẢM 500.000₫</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-3">
+								<a href="#">
+				                    <div class="product">
+				                        <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                             <label class="img-label" >Trả góp 0%</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">IPhone 11 Pro Max 64GB</div>
+				                            <div class="price">
+				                                <strong>33.990.000₫</strong>
+
+				                            </div>
+				                            <div class="endow">
+				                                <p> Phiếu mua hàng 2 triệu (được quy đổi thành tiền mặt, áp dụng đặt và nhận hàng từ 13 - 16/2)</p>
+				                            </div>
+				                        </div>
+				                        <label class="product-label" >Trả góp 0%</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-4">
+								<a href="#">
+				                    <div class="product">
+				                       <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            <label class="discount img-label">GIẢM 500.000₫</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung galaxy A51</div>
+				                            <div class="price">
+				                                <strong>7.499.000₫</strong>
+				                                <span>6.999.000₫</span>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">GIẢM 500.000₫</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-5-rp">
+								<a href="#">
+				                    <div class="product">
+				                       <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            <label class="discount img-label">GIẢM 500.000₫</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung galaxy A51</div>
+				                            <div class="price">
+				                                <strong>7.499.000₫</strong>
+				                                <span>6.999.000₫</span>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">GIẢM 500.000₫</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="feature pd-6">
+								<a href="">
+									<img src="https://cdn.tgdd.vn/Products/Images/42/209800/Feature/oppo-reno2-f-ft-720-480x222-1.jpg">
+									<div class="feature-promo">
+										<h2 class="name-sp">OPPO Reno2 f-pd-5</h2>
+										<div class="price">
+											<strong>7.990.000₫</strong>
+											<span>8.990.000₫</span>
+										</div>
+									</div>
+									<div class="feature-label discount">Giảm 1.000.000₫</div>
+								</a>
+							</li>
+							<li class="main-product pd-7">
+								<a href="#">
+				                    <div class="product">
+				                        <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            <label class="discount img-label">GIẢM 500.000₫</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung galaxy A51</div>
+				                            <div class="price">
+				                                <strong>7.499.000₫</strong>
+				                                <span>6.999.000₫</span>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">GIẢM 500.000₫</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-8">
+								<a href="#">
+				                    <div class="product">
+				                        <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            <label class="discount img-label">GIẢM 500.000₫</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung galaxy A51</div>
+				                            <div class="price">
+				                                <strong>7.499.000₫</strong>
+				                                <span>6.999.000₫</span>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">GIẢM 500.000₫</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-9">
+								<a href="#">
+				                    <div class="product">
+				                        <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                            <label class="discount img-label">GIẢM 500.000₫</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung galaxy A51</div>
+				                            <div class="price">
+				                                <strong>7.499.000₫</strong>
+				                                <span>6.999.000₫</span>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">GIẢM 500.000₫</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-10-rp">
+								<a href="#">
+				                    <div class="product">
+				                       <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+					                             <label class="discount img-label">GIẢM 500.000₫</label>
+					                        </div>
+
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung galaxy A51</div>
+				                            <div class="price">
+				                                <strong>7.499.000₫</strong>
+				                                <span>6.999.000₫</span>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">GIẢM 500.000₫</label>
+				                    </div>
+				                 </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--THIRD-CONTAINT-->
+				<!--FIVE-CONTAINT-->
+				<div id="five-containt">
+					<div class="navigat">
+						<span>LAPTOP NỔI BẬT</span>
+						<ul>
+							<li><a href="">Laptop DELL</a></li>
+							<li><a href="">Laptop ASUS</a></li>
+							<li><a href="">Laptop HP</a></li>
+							<li><a href="">Laptop Lenovo</a></li>
+							<li><a href="">Laptop MacBook</a></li>
+							<li><a href="">Xem tất cả Laptop</a></li>
+						</ul>
+					</div>
+					<div class="homeproduct">
+						<ul class="list">
+							<li class="feature pd-1" >
+								<a href="">
+									<img src="https://cdn.tgdd.vn/Products/Images/44/212657/Feature/asus-vivobook-a412fa-i5-8265u-8gb-32gb-512gb-win10-480x222.jpg">
+									<div class="feature-promo">
+										<h2 class="name-sp">Samsung Galaxy S10 Lite</h2>
+										<div class="price">
+											<strong>14.990.000₫</strong>
+										</div>
+									</div>
+									<div class="feature-label">Trả góp 0%</div>
+								</a>
+							</li>
+							<li class="main-product pd-2">
+								<a href="#">
+				                    <div class="product">
+				                        <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/44/208863/acer-swift-sf315-52-38yq-i3-8130u-4gb-1tb-156f-win-400x400.jpg"/>
+					                            <label class="discount img-label">GIẢM 500.000₫</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung galaxy A51</div>
+				                            <div class="price">
+				                                <strong>7.499.000₫</strong>
+				                                <span>6.999.000₫</span>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">GIẢM 500.000₫</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-3">
+								<a href="#">
+				                    <div class="product">
+				                       <div class="img-container">
+					                       	<div class="img">
+					                           	<img src="https://cdn.tgdd.vn/Products/Images/44/210172/hp-348-g5-i3-7020u-4gb-256gb-win10-7xj62pa-210172-400x400.jpg"/>
+					                           	 <label class="img-label">Trả góp 0%</label>
+					                        </div>
+				                       </div>
+				                        <div class="promo">
+				                            <div class="name-sp">IPhone 11 Pro Max 64GB</div>
+				                            <div class="price">
+				                                <strong>33.990.000₫</strong>
+
+				                            </div>
+				                            <div class="endow">
+				                                <p> Phiếu mua hàng 2 triệu (được quy đổi thành tiền mặt, áp dụng đặt và nhận hàng từ 13 - 16/2)</p>
+				                            </div>
+				                        </div>
+				                        <label class="product-label">Trả góp 0%</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-4">
+								<a href="#">
+				                    <div class="product">
+				                       <div class="img-container">
+					                       	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/44/203455/lenovo-ideapad-c340-14iwl-i5-8265u-8gb-256gb-touch-24-400x400.jpg"/>
+					                            <label class="discount img-label">GIẢM 500.000₫</label>
+					                        </div>
+				                       </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung galaxy A51</div>
+				                            <div class="price">
+				                                <strong>7.499.000₫</strong>
+				                                <span>6.999.000₫</span>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">GIẢM 500.000₫</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-5">
+								<a href="#">
+				                    <div class="product">
+				                       <div class="img-container">
+					                       	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/44/203455/lenovo-ideapad-c340-14iwl-i5-8265u-8gb-256gb-touch-24-400x400.jpg"/>
+					                            <label class="discount img-label">GIẢM 500.000₫</label>
+					                        </div>
+				                       </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung galaxy A51</div>
+				                            <div class="price">
+				                                <strong>7.499.000₫</strong>
+				                                <span>6.999.000₫</span>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">GIẢM 500.000₫</label>
+				                    </div>
+				                 </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--FIVE-CONTAINT-->
+				<!--SIX-CONTAINT-->
+				<div id="six-containt">
+					<div class="navigat">
+						<span>TAPLET NỔI BẬT</span>
+						<ul>
+							<li><a href="">Tablet IPad</a></li>
+							<li><a href="">Tablet Samsung</a></li>
+							<li><a href="">Tablet Huawei</a></li>
+							<li><a href="">Tablet Lenovo</a></li>
+							<li><a href="">Tablet mobell</a></li>
+							<li><a href="">Xem tất cả Tablet</a></li>
+						</ul>
+					</div>
+					<div class="homeproduct">
+						<ul class="list">
+							<li class="feature pd-1" >
+								<a href="">
+									<img src="https://cdn.tgdd.vn/Products/Images/522/208870/Feature/samsung-galaxy-tab-s6-ft-480x222-10.jpg">
+									<div class="feature-promo">
+										<h2 class="name-sp">Samsung Galaxy Tab S6</h2>
+										<div class="price">
+											<strong>18.490.000₫</strong>
+										</div>
+									</div>
+									<div class="feature-label">Trả góp 0%</div>
+								</a>
+							</li>
+							<li class="main-product pd-2">
+								<a href="#">
+				                    <div class="product">
+				                        <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/522/213104/ipad-10-2-inch-wifi-128gb-2019-silver-400x400.jpg"/>
+					                            <label class="img-label">Trả góp 0%</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">iPad 10.2 inch Wifi 128GB (2019)</div>
+				                            <div class="price">
+				                                <strong>11.990.000₫</strong>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Phiếu mua hàng 500.000đ (được quy đổi thành tiền mặt) và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="product-label">Trả góp 0%</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-3">
+								<a href="#">
+				                    <div class="product">
+				                        <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/522/205751/samsung-galaxy-tab-a8-t295-2019-silver-400x400.jpg"/>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">Samsung Galaxy Tab A8 8" T295 (2019)</div>
+				                            <div class="price">
+				                                <strong>3.690.000₫</strong>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Mua kèm Office 365 Personal ưu đãi giảm 600.000đ và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-4">
+								<a href="#">
+				                    <div class="product">
+				                        <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/522/202706/ipad-mini-79-inch-wifi-2019-gold-400x400.jpg"/>
+					                            <label class="img-label">Trả góp 0%</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">iPad Mini 7.9 inch Wifi 64GB (2019)</div>
+				                            <div class="price">
+				                                <strong>10.990.000₫</strong>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Phiếu mua hàng 500.000đ (được quy đổi thành tiền mặt) và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="product-label">Trả góp 0%</label>
+				                    </div>
+				                 </a>
+							</li>
+							<li class="main-product pd-5">
+								<a href="#">
+				                    <div class="product">
+				                        <div class="img-container">
+				                        	<div class="img">
+					                            <img src="https://cdn.tgdd.vn/Products/Images/522/202706/ipad-mini-79-inch-wifi-2019-gold-400x400.jpg"/>
+					                            <label class="discount img-label">Trả góp 0%</label>
+					                        </div>
+				                        </div>
+				                        <div class="promo">
+				                            <div class="name-sp">iPad Mini 7.9 inch Wifi 64GB (2019)</div>
+				                            <div class="price">
+				                                <strong>10.990.000₫</strong>
+				                            </div>
+				                            <div class="endow">
+				                                <p> Phiếu mua hàng 500.000đ (được quy đổi thành tiền mặt) và <b>1 K.mãi</b> khác</p>
+				                            </div>
+				                        </div>
+				                        <label class="discount product-label">Trả góp 0%</label>
+				                    </div>
+				                 </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+	            <!--SIX-CONTAINT-->
+	            <!--SEVEN_CONTAINT-->
+	            <div id="seven-containt">
+					<div class="navigat">
+						<span>TAPLET NỔI BẬT</span>
+						<ul>
+							<li><a href="">Tablet IPad</a></li>
+							<li><a href="">Tablet Samsung</a></li>
+							<li><a href="">Tablet Huawei</a></li>
+							<li><a href="">Tablet Lenovo</a></li>
+							<li><a href="">Tablet mobell</a></li>
+							<li><a href="">Xem tất cả Tablet</a></li>
+						</ul>
+					</div>
+					<div class="container-slide-sp seven-container-slide-sp">
+							<div class="owl-carousel owl-theme" id="myOwlCarousel-2">
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+						                            <label class="discount img-label">GIẢM 500.000₫</label>
+						                        </div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+						                            <label class="discount img-label">GIẢM 500.000₫</label>
+						                        </div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div> 
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a> 
+					            </div>
+					            <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+						                            <label class="discount img-label">GIẢM 500.000₫</label>
+						                        </div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+						                            <label class="discount img-label">GIẢM 500.000₫</label>
+						                        </div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					           <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+						                            <label class="discount img-label">GIẢM 500.000₫</label>
+						                        </div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					           <!-- PRODUCT-1 -->
+					           <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+						                            <label class="discount img-label">GIẢM 500.000₫</label>
+						                        </div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					           <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+						                            <label class="discount img-label">GIẢM 500.000₫</label>
+						                        </div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+						                            <label class="discount img-label">GIẢM 500.000₫</label>
+						                        </div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- PRODUCT-1 -->
+					            <div class="item">
+					                <a href="#">
+					                    <div class="product">
+					                        <div class="img-container">
+					                        	<div class="img">
+						                            <img src="https://cdn.tgdd.vn/Products/Images/42/211570/TimerThumb/samsung-galaxy-a51-(1).jpg"/>
+						                            <label class="discount img-label">GIẢM 500.000₫</label>
+						                        </div>
+					                        </div>
+					                        <div class="promo">
+					                            <div class="name-sp">Samsung galaxy A51</div>
+					                            <div class="price">
+					                                <strong>7.499.000₫</strong>
+					                                <span>6.999.000₫</span>
+					                            </div>
+					                            <div class="endow">
+					                                <p> Ưu đãi quà tặng độc quyền Galaxy trị giá đến 420.000đ và <b>1 K.mãi</b> khác</p>
+					                            </div>
+					                        </div>
+					                        <label class="discount product-label">GIẢM 500.000₫</label>
+					                    </div>
+					                 </a>
+					            </div>
+					            <!-- END-PRODUCT -->
+					      	</div>	
+							<!--================SLIDE-2-END===============-->
+					</div>
+				</div>
+			</div>
+			<a href="#" class="back-to-top" id="back-to-top"></a>
+			<div class="night-mod-button" >
+				<img class="logo-bt-nm" src="./image/lododarkmode-open-sun5.png" title="Change theme">
+			</div>
+			
+		</div>
+		<!--END-MAIN-CONTAINT-->
+		<!--FOOTER-->
+		<div id="footer">
+			<div class="rowfoot1">
+				<ul class="colfoot">
+					<li><a href="">- Trung tâm bảo hành chính hãng</a></li>
+					<li><a href="">- Chính sách bảo hành</a></li>
+					<li><a href="">- Chính sách bảo mật</a></li>
+					<li><a href="">- Chính sách đổi trả</a></li>
+					<li><a href="">- Chính sách sử dụng</a></li>
+					<li><a href="">- Xem thêm</a></li>
+				</ul>
+				<ul class="colfoot">
+					<li><a href="">- Mua hàng thanh toán online</a></li>
+					<li><a href="">- Mua hàng online trả góp</a></li>
+					<li><a href="">- Tra thông tin đơn hàng</a></li>
+					<li><a href="">- Giao hàng & Thanh toán</a></li>
+					<li><a href="">- Xem thêm</a></li>
+				</ul>
+				<ul class="colfoot">
+					<li>
+						<span style="font-size: 16px;font-weight: 600">Tìm cửa hàng</span>
+						<ul>
+							<li><a href="">- Tìm cửa hàng ở Hò Chí Minh</a></li>
+							<li><a href="">- Tìm cửa hàng ở Hà Nội</a></li>
+							<li><a href="">- Mua hàng từ xa</a></li>
+						</ul>
+					</li>
+					<li>
+						<span style="font-size: 16px;font-weight: 600;">Phương thức thanh toán</span>
+						<div class="foot-pay">
+                   			<a href="#" style="background-image: url('./img/logo_visa.png');"></a>
+                   			<a href="#" style="background-image: url('./img/logo_master-card.png');"></a>
+                   			<a href="#" style="background-image: url('./img/logo_atm.png');"></a>
+                           	<a href="#" style="background-image: url('./img/logo_alepay.png');"></a>
+                           	<a href="#" style="background-image: url('./img/logo_zalo.png');"></a>
+                           	<a href="#" style="background-image: url('./img/logo_vnpay.png');"></a>
+                           	<a href="#" style="background-image: url('./img/logo_momo.png');"></a>
+                           	<a href="#" style="background-image: url('./img/logo_mpos.png');"></a> 	
+                        </div>
+					</li>
+				</ul>
+				<ul class="colfoot" style="width: 270px;margin-right: 0;">
+					<li class="call-support">
+						<div class="call">
+							<span>Gọi mua hàng</span>
+							<div class="phone">
+								<a href="">0774787675</a>
+								<span>(7:30 - 22:00)</span>
+							</div>
+						</div>
+						<div class="call">
+							<span>Gọi khiếu nại</span>
+							<div class="phone">
+								<a href="">0774787675</a>
+								<span>(8:00 - 21:30)</span>
+							</div>
+						</div>
+						<div class="call">
+							<span>Gọi bảo hành</sapn>
+							<div class="phone">
+								<a href="">0774787675</a>
+								<span>(8:00 - 21:00)</sapn>
+							</div>
+						</div>
+						<div class="call">
+							<span>Gọi kỹ thuật</span>
+							<div class="phone">
+								<a href="">0774787675</a>
+								<span>(7:30 - 22:00)</span>
+							</div>
+						</div>
+					</li>
+					<li><a href="">Xem thêm</a></li>
+				</ul>
+				<div class="rowfoot1-rp">
+				    <div class="colfoot-rp">
+				    	<a href="#">Chăm sóc khách hàng</a>
+						<a href="#">Chính sách công ty</a>
+						<a href="#">Thông tin của hàng</a>
+						<a href="#">Thanh toán</a>
+				    </div>
+				    <div class="colfoot-rp">
+				    	<a href=""><img src="./img/thongbao.png"></a>
+				    </div>
+			</div>
+			</div>
+			
+			<div class="rowfoot2">
+				<p>© 2019. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH &amp; ĐT TP.HCM cấp ngày 02/01/2007. Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 18001060. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Trần Nhật Linh. <a href="#">Xem chính sách sử dụng web</a></p>
+			</div>
+		</div>
+	</div>
+		<!--CONTAINER-->
+
+   
+    <link id="dark-mode" rel="stylesheet" type="text/css" href="">
+	<script src="./js/slide.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
+
+                           	

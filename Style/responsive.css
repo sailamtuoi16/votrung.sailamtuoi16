@@ -111,9 +111,9 @@
 	display: none;
 }
 @media screen and (max-width: 1023px){
-	 body {
+	 /*body {
         background-color: pink;
-    }
+    }*/
 /*-----HEADER-------------*/
 	
 /*-----HEADER----END-------*/
@@ -203,9 +203,9 @@
 }
 
 @media screen and (max-width: 950px){
-	body {
+	/*body {
 		background-color: red;
-	}
+	}*/
  /*-----HEADER-------------*/
 /*-----HEADER----END-------*/
 /*-----MENU----------------*/
@@ -326,11 +326,11 @@
 /*Ipad dọc(768 x 1024)*/
 @media screen and (max-width: 767px){
     /*-----HEADER-------------*/
-	body {
+	/*body {
 		background-color: yellow;
-	}
+	}*/
 	#containt {
-		padding-top: 70px;
+		padding-top: 60px;
 	}
     #contact-header-container {
     	display: none;
@@ -380,6 +380,10 @@
 /*-----FIRST-CONTAINT------*/
 /*-----FIRST-CONTAINT---END---*/
 /*---------SECON-CONTAINT---------*/
+	#containt #second-containt, #third-containt, 
+	#five-containt, #six-containt, #seven-containt, #container #footer {
+	    margin-top: 5px;
+	}
 	#second-containt .show-sp {
 		margin-top: -16px;
 	}
@@ -399,6 +403,7 @@
 	}
 /*---------SECOND-CONTAINT----END-----*/
 /*---------THIRD-CONTAINT--FIVE-CONTAINT--SIX_CONTAINT---------*/
+	
 	#third-containt .navigat, .navigat{
 		height: 35px !important;
 	}
@@ -448,9 +453,9 @@
 
 @media screen and (max-width: 600px){
     /*-----HEADER-------------*/
-	body {
+	/*body {
 		background-color: green;
-	}
+	}*/
 	.center {
 		display: none;
 	}
@@ -511,11 +516,11 @@
 
 /*Tablet nhỏ(480 x 640)*/
 @media screen and (max-width: 479px){
-	body {
+	/*body {
 		background-color: #999;
-	}
+	}*/
 	#containt {
-	    padding-top: 50px;
+	    padding-top: 40px;
 	}
 /*-----HEADER----------*/
 	.icon-search-container {

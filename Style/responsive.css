@@ -203,9 +203,7 @@
 }
 
 @media screen and (max-width: 950px){
-	/*body {
-		background-color: red;
-	}*/
+	
  /*-----HEADER-------------*/
 /*-----HEADER----END-------*/
 /*-----MENU----------------*/
@@ -382,7 +380,7 @@
 /*---------SECON-CONTAINT---------*/
 	#containt #second-containt, #third-containt, 
 	#five-containt, #six-containt, #seven-containt, #container #footer {
-	    margin-top: 5px;
+	    margin-top: 5px !important;
 	}
 	#second-containt .show-sp {
 		margin-top: -16px;
